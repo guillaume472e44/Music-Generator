@@ -1,0 +1,14 @@
+.audioSlider {
+  --backgroundSlider: #484848;
+  --activeValueSlider: #b8b8b8;
+  --thumbColor: var(--activeValueSlider);
+  --sliderWidth: 128px;
+  --sliderHeight: 8px;
+  --thumbWidth: 12px;
+  --thumbHeight: 6px;
+}
+
+.audioSlider:hover,
+.audioSlider:focus-within {
+  --thumbColor: aqua;
+}

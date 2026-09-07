@@ -1,0 +1,60 @@
+.audioSlider__inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4px;
+}
+
+.audioSlider__inputContainer input[type="range"] {
+  width: var(--sliderWidth);
+  height: var(--sliderHeight);
+  appearance: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 48px;
+}
+
+.audioSlider__inputContainer input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  cursor: grab;
+  width: var(--thumbWidth);
+  height: var(--thumbHeight);
+  background-color: var(--thumbColor);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+
+  box-shadow:
+    calc((var(--sliderWidth) / 2 + calc(var(--thumbWidth) + 3px)) * -1) 0 0
+      calc(var(--sliderWidth) / 2) var(--activeValueSlider),
+    calc((var(--sliderWidth) / 2 + calc(var(--thumbWidth) + 3px))) 0 0
+      calc(var(--sliderWidth) / 2) var(--backgroundSlider);
+}
+
+.audioSlider__inputContainer input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  cursor: grab;
+  width: var(--thumbWidth);
+  height: var(--thumbHeight);
+  background-color: var(--thumbColor);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+
+  box-shadow:
+    calc((var(--sliderWidth) / 2 + calc(var(--thumbWidth) + 3px)) * -1) 0 0
+      calc(var(--sliderWidth) / 2) var(--activeValueSlider),
+    calc((var(--sliderWidth) / 2 + calc(var(--thumbWidth) + 3px))) 0 0
+      calc(var(--sliderWidth) / 2) var(--backgroundSlider);
+}
+
+.audioSlider__inputContainer label {
+  text-box-trim: trim-both;
+  min-width: 32px;
+  text-align: end;
+  font-weight: 100;
+  color: var(--textColor);
+}
