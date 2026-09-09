@@ -1,3 +1,4 @@
+import { useGenerals } from "../../store";
 import { useState } from "react";
 import styles from "./Transport.module.css";
 
@@ -21,6 +22,7 @@ export default function Transport() {
   };
 
   const [transportState, setTransportState] = useState(initialState);
+  const { updateCurrentState } = useGenerals((state) => state.transport);
 
   function isTransportAction(value: string): value is TransportAction {
     if (["back", "play", "stop"].includes(value)) return true;
@@ -34,6 +36,7 @@ export default function Transport() {
       if (transportState.antiSpam) return; // impose un petit delais entre les changements d'états
 
       const newState = { ...initialState, [action]: true, prevState: action };
+      updateCurrentState(action);
 
       if (!newState.play) {
         setTransportState({ ...newState, antiSpam: true });
@@ -47,7 +50,7 @@ export default function Transport() {
   }
 
   return (
-    <div className={styles.transports}>
+    <div>
       <h2>transport controls</h2>
       <div className={styles.transports__buttons}>
         <button data-action="back" onClick={handleClick}>

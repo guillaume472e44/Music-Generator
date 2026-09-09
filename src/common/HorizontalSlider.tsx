@@ -1,11 +1,13 @@
-import { useState } from "react";
-import styles from "./SliderVolume.module.css";
+import styles from "./HorizontalSlider.module.css";
 
-export default function SliderVolume() {
-  const [value, setValue] = useState(100);
+interface Props {
+  value: number;
+  updateValue: (newVolume: number) => void;
+}
 
+export default function HorizontalSlider({ value, updateValue }: Props) {
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    setValue(e.currentTarget.valueAsNumber);
+    updateValue(e.currentTarget.valueAsNumber);
   }
 
   return (

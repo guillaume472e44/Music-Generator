@@ -26,7 +26,7 @@
 
   & > div h2 {
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--textColor);
     background: var(--background-element);
     border-radius: 5px;
@@ -39,6 +39,10 @@
   }
 
   & > div:not(:last-child) {
-    margin-inline-end: 16px;
+    margin-inline-end: 8px;
   }
+
+  /* & > div[data-position="pushToRight"] {
+    margin-inline-end: auto;
+  } */
 }
