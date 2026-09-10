@@ -1,0 +1,10 @@
+.container {
+  border-left: none;
+  flex-grow: 1;
+  overflow-x: scroll;
+}
+
+.test {
+  background-color: green;
+  width: 2000px;
+}

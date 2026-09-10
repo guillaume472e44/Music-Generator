@@ -9,6 +9,7 @@
   inset: 0;
   background: var(--background-element);
   color: var(--textColor);
+  cursor: pointer;
 }
 
 .inputContainer:focus-within label {

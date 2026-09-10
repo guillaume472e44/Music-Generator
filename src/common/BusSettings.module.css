@@ -1,0 +1,18 @@
+.container {
+  border: none;
+  background-color: var(--background-secondary);
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 1;
+
+  & img {
+    margin: auto;
+  }
+}
+
+.container:hover,
+.container:focus {
+  box-shadow: 0 0 2px 0px rgba(245, 222, 179, 0.5) inset;
+  outline: none;
+}

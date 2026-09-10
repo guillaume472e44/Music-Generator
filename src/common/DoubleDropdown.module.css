@@ -1,0 +1,93 @@
+.sampleSelect {
+  border: none;
+  color: gray;
+  background-color: var(--background-secondary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+  anchor-name: --categories;
+
+  & span {
+    margin-inline-start: 12px;
+    color: rgb(108, 108, 108);
+    font-weight: 900;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2px 0px rgba(245, 222, 179, 0.5) inset;
+    outline: none;
+    color: whitesmoke;
+  }
+}
+
+.categories {
+  background: rgb(24, 24, 24);
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(40, 40, 40);
+  position-anchor: --categories;
+  margin: 0;
+  inset: 0;
+  position-area: bottom span-right;
+
+  &:popover-open {
+    display: flex;
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+    color: rgb(192, 192, 192);
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & span {
+      margin-inline-start: 48px;
+      color: rgb(108, 108, 108);
+      font-weight: 900;
+    }
+  }
+
+  & button:hover {
+    background-color: #242424;
+  }
+}
+
+.subContainer {
+  anchor-name: --anchorSubPopover;
+}
+
+.subCategories {
+  background: rgb(24, 24, 24);
+  flex-direction: column;
+  padding: 8px 2px;
+  border-radius: 8px;
+  border: 1px solid rgb(40, 40, 40);
+  position-anchor: --anchorSubPopover;
+  margin: -4px 0;
+  inset: 0;
+  position-area: span-bottom right;
+
+  &:popover-open {
+    display: flex;
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+    color: rgb(223, 222, 222);
+    padding: 4px 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & button:hover {
+    background-color: #242424;
+  }
+}

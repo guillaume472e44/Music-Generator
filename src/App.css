@@ -1,1 +1,17 @@
+.mainModules {
+  & > section {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-secondary);
+  }
 
+  & > section:first-child {
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+  }
+
+  & > section:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+}
