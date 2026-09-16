@@ -15,8 +15,8 @@ export default function HorizontalSlider({ value, updateValue }: Props) {
       <input
         id="volume"
         type="range"
-        min="0"
-        max="127"
+        min="-64"
+        max="6"
         value={value}
         onChange={handleChange}
       />

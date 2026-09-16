@@ -1,0 +1,10 @@
+.projectInfos {
+  font-size: 11px;
+  color: gray;
+  text-align: center;
+
+  & p {
+    position: relative;
+    bottom: -1px;
+  }
+}

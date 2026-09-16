@@ -5,12 +5,12 @@
   }
 
   & > section:first-child {
-    border-right: none;
+    /* border-right: none; */
     border-radius: 8px 0 0 8px;
   }
 
   & > section:nth-child(2) {
-    border-left: none;
+    /* border-left: 2px solid var(--border-secondary); */
     border-right: none;
     border-radius: 0;
   }

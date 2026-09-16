@@ -6,6 +6,8 @@ import Buses from "../components/buses/Buses";
 import Master from "../components/master/Master";
 
 export default function Header() {
+  console.log("header render");
+
   return (
     <header className={styles.controls}>
       <ProjectInfo />

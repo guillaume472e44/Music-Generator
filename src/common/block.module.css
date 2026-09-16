@@ -1,0 +1,15 @@
+.block {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--background-element);
+  flex-shrink: 0;
+  /* transform: scale(50%); */
+  /* border-radius: 50%; */
+}
+
+.block.highlight {
+  background-color: var(--background-highlight);
+}
+

@@ -4,8 +4,8 @@
   background-color: var(--background-element);
   padding: 4px;
   border-radius: 6px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
   height: 48px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
     box-shadow: 0 0 4px 0px rgba(245, 222, 179, 0.75);
   }
 
-  .trackNumber {
+  & .trackNumber {
     border: none;
     background-color: var(--background-secondary);
     aspect-ratio: 1;
@@ -25,13 +25,24 @@
     color: var(--textColor);
     cursor: pointer;
   }
-  .trackNumber:hover,
-  .trackNumber:focus {
+  & .trackNumber:hover,
+  & .trackNumber:focus {
     box-shadow: 0 0 2px 0px rgba(245, 222, 179, 0.5) inset;
     outline: none;
+  }
+  & .trackNumber.active {
+    color: red;
   }
 
   & > button {
     height: 32px;
   }
+
+  & button {
+    font-family: var(--fontFamily-main);
+  }
+}
+
+.container:not(:last-child) {
+  margin-block-end: 4px;
 }

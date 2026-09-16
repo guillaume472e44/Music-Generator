@@ -1,0 +1,26 @@
+.inputContainer {
+  position: relative;
+}
+.inputContainer:focus-within label {
+  display: none;
+}
+
+.inputContainer input {
+  border: none;
+  outline: none;
+  padding-inline: 2px;
+}
+
+.inputContainer label {
+  display: block;
+  position: absolute;
+  inset: 0;
+  padding-inline: 2px;
+  background-color: var(--background-secondary);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+
+  &:hover {
+    background-color: rgb(63, 63, 63);
+  }
+}

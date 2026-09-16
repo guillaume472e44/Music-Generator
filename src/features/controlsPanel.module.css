@@ -42,6 +42,10 @@
     margin-inline-end: 8px;
   }
 
+  & > div:first-child {
+    margin-inline: 0 106px;
+  }
+
   /* & > div[data-position="pushToRight"] {
     margin-inline-end: auto;
   } */

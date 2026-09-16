@@ -1,5 +1,28 @@
 .container {
   flex-shrink: 0;
   border-radius: 8px 0 0 8px;
-  padding: 4px 0 4px 4px;
+  padding: 4px 2px 4px 4px;
+}
+.contextMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background-main);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-secondary);
+
+  & button {
+    border: none;
+    background: none;
+    padding: 4px;
+    border-radius: 4px;
+    color: gray;
+  }
+  & button:hover {
+    background-color: var(--background-secondary);
+    color: whitesmoke;
+  }
 }

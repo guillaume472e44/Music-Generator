@@ -1,7 +1,8 @@
 .container {
-  border-left: none;
   flex-grow: 1;
   overflow-x: scroll;
+  padding-block: 4px;
+  padding-inline-start: 2px;
 }
 
 .test {

@@ -1,0 +1,4 @@
+.rowContainer {
+  display: flex;
+  gap: 1px;
+}

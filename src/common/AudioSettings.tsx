@@ -4,7 +4,7 @@ import styles from "./AudioSettings.module.css";
 export default function AudioSettings() {
   return (
     <button className={styles.container}>
-      <img src={audioIcon} alt="" aria-hidden="true"  />
+      <img src={audioIcon} alt="" aria-hidden="true" />
     </button>
   );
 }
